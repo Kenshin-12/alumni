@@ -1,0 +1,8 @@
+.ask{
+    display: column;
+    flex-direction: column;
+    flex: 10;
+    padding-bottom: 2.4rem;
+    font-family: 'Roboto';
+    font-size: 10px;
+}

@@ -1,0 +1,19 @@
+.scroll{
+    overflow: auto;
+    white-space: nowRap;
+}
+
+#card{
+  display: inline-block;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#typo{
+    display:block ;
+    white-space: inherit;
+}
+.carousel-container{
+  height: 100%;
+}

@@ -1,0 +1,22 @@
+#outlined-basic{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#outlined-basic2{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#tombol:hover{
+    background-color: white;
+    color: #1565c0;
+}
+
+#button2:hover{
+    color: white;
+}
+
+#button2{
+    color: #1565c0;
+}

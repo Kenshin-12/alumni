@@ -1,0 +1,17 @@
+.text{
+    width: auto;
+}
+
+#icon:focus{
+    color: #252B42;
+}
+
+#button{
+    color: white;
+}
+
+#button:focus{
+    border-radius: 0 30px 30px 0;
+    background-color: white;
+    color: #252B42;
+}
