@@ -15,5 +15,10 @@
     white-space: inherit;
 }
 .carousel-container{
-  height: 100%;
+  height: 70%;
+}
+
+.react-multiple-carousel__arrow--right{
+  right:  calc(10% + 1px);
+
 }

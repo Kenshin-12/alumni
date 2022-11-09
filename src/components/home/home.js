@@ -322,7 +322,7 @@ export default function ResponsiveDrawer(props) {
           </div>
      </Card>
     </Grid>
-    <Grid item md={5} sx={{p:"35px",height:'75vh'}} flexDirection="row" display="flex">
+    <Grid item md={5} sx={{p:"35px",height:'60vh'}} flexDirection="row" display="flex">
       <Card elevation={1} sx={{width:'65vh',height:'50vh' ,ml:'1rem'}}>
         <Box marginTop="1rem" marginLeft="2rem">
         <Typography><b>Level Kompetensi</b></Typography>
@@ -332,7 +332,7 @@ export default function ResponsiveDrawer(props) {
         </div> 
      </Card>
     </Grid>
-    <Grid item md={7} sx={{p:"35px",height:'75vh', ml:"-3.5rem"}}>
+    <Grid item md={7} sx={{p:"35px",height:'60vh', ml:"-3.5rem"}}>
         <Card elevation={1} sx={{width:'101vh', height:'50vh',p:2.5,ml:'1rem'}}>
         <Grid item md={12}>
         <Box flexDirection="row" display="flex">
@@ -385,7 +385,12 @@ export default function ResponsiveDrawer(props) {
         }
        </Card>
     </Grid>
-    <Grid item md={12} sx={{p:"35px",gap:'1rem',height:'55vh'}}>
+    <Grid item md={12} sx={{p:"35px",gap:'1rem',height:'75vh', marginLeft:"0.2rem"}}>
+      <Box sx={{marginLeft:'0.5rem'}}>
+        <Typography fontSize={24} fontFamily="Poppins">
+         Rekomendasi Perusahaan
+         </Typography>
+      </Box>
     <Carousel
       swipeable={false}
       draggable={false}

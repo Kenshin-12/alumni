@@ -71,7 +71,7 @@ export default function ResponsiveDrawer() {
   };
 
   return (
-    <Box sx={{ maxWidth:'100%', display:'flex', ml:'17rem' }}>
+    <Box sx={{ maxWidth:'100%', display:'flex', ml:'15rem', backgroundColor:'#EEEEEE' }}>
         <CssBaseline />
       <AppBar
         elevation={0}
@@ -91,25 +91,16 @@ export default function ResponsiveDrawer() {
         </Typography>
       </Toolbar>
           </AppBar>
-    <Box marginLeft="1rem">
-    <Toolbar sx={{ width:'100vh', height:'0px', mt:'100px' }}>
-            <Typography  
-            textTransform={'capitalize'}
-            fontSize={'24px'} 
-            sx={{ marginLeft:'-0.5rem' }}
-            >
-            Lengkapi Data Dibawah Ini
-            </Typography>
-      </Toolbar>
-      <Grid container sx={{ml:'-1rem',mt:'1rem', width:'auto'}}>
+    <Box marginLeft="1rem" marginTop="5rem">
+      <Grid container sx={{ml:'-1rem',mt:'1rem', width:'100%', backgroundColor:'transparant'}}>
         <Grid item md={10} sx={{p:"30px", width:'100%',height:'90vh'}} >
-        <Box marginBottom="2rem">
-      <Typography sx={{ fontSize:'24px' }}>
-        <b>Keterangan Training</b>
-      </Typography>
-      </Box>
-        <Card sx={{width:"110%", height:'75vh', ml:'1.5rem'}} >
-        <Box display="flex" flexDirection="row" marginTop="1rem" marginLeft={"3rem"}>
+        <Card sx={{width:"110%", height:'120%', ml:'1.5rem'}} >
+          <Box marginBottom="2rem">
+          <Typography sx={{ fontSize:'26px',ml:'3rem', mt:'2rem' }}>
+            <b>Informasi Umum</b>
+          </Typography>
+          </Box>
+        <Box display="flex" flexDirection="row" marginTop="0rem" marginLeft={"3rem"}>
                 <Grid item md={7}>
                  <Box sx={{ width:"35vh", pl:0 }}>
                   <Typography sx={{color:'black',mt:'10px',mb:'10px',fontSize:18}}><b>Judul</b></Typography>
@@ -132,7 +123,7 @@ export default function ResponsiveDrawer() {
                 </Box>
                 <Box marginTop="31px">
                   <Typography sx={{color:'black',mt:'10px',mb:'10px',fontSize:18}}><b>Deskripsi</b></Typography>
-                  <TextField sx={{ width:'20rem' }} size="small" display="block" multiline maxRows={2} id="outlined-basic2" variant="outlined" />
+                  <TextField sx={{ width:'20rem' }} size="small" display="block" multiline maxRows={4} id="outlined-basic2" variant="outlined" />
                 </Box>
               </Grid>
               <Grid item md={4} marginTop="-1.5rem">
@@ -169,13 +160,13 @@ export default function ResponsiveDrawer() {
               </Card>
         </Grid>   
 
-        <Grid item md={10} sx={{p:"30px", width:'100%',height:'80vh', mt:'4rem'}} >
-        <Box marginBottom="2rem">
-      <Typography sx={{ fontSize:'24px' }}>
+        <Grid item md={10} sx={{p:"30px", width:'100%',height:'80vh', mt:'4rem', pb:'0px'}} >
+        <Card sx={{width:"110%", height:'80%', ml:'1.5rem'}} >
+        <Box marginTop="2rem" marginLeft="3rem">
+      <Typography sx={{ fontSize:'26px' }}>
         <b>Contact Person</b>
       </Typography>
       </Box>
-        <Card sx={{width:"110%", height:'45vh', ml:'1.5rem'}} >
         <Box display="flex" flexDirection="row" marginTop="1rem" marginLeft={"3rem"}>
                 <Grid item md={7}>
                  <Box sx={{ width:"35vh", pl:0 }}>

@@ -126,14 +126,14 @@ const bidangPerusahaan = [
 export default function ResponsiveDrawer() {
   const [daerah, setDaerah] = useState('');
 
-  const handleChange = (event: SelectChangeEvent<String>, child: React.ReactNode) => {
+  const handleChange = (event) => {
     setDaerah(event.target.value);
   };
 
 
   const [bidang, setBidang] = useState('');
 
-  const openChange = (event: SelectChangeEvent<String>, child: React.ReactNode) => {
+  const openChange = (event) => {
     setBidang(event.target.value);
   };
 

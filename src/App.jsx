@@ -10,7 +10,7 @@ import Sidebar from './components/Sidebar/sidebar';
 import Notifikasi from './components/notifikasi/notifikasiPencarikerja';
 import DetailKonsultasi from './components/Konsultasi/detailKonsultasi';
 import Home from './components/home/home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/login/login'
 
 function App() {
@@ -20,16 +20,17 @@ function App() {
       <>
         <Sidebar />
         <Routes>
-        <Route exact path='/home' element={<Home />} />
-        <Route  exact path='/AddTraining' element={<AddTraining />} />
-        <Route  exact path='/List-Training' element={<ListTraining />} />
-        <Route  exact path='/List-perusahaan' element={<ListPerusahaan />} />
-        <Route  exact path='/Detail-Training' element={<Dtraining />} />
-        <Route  exact path='/DetailTraining' element={<DetailTraining />} />
-        <Route  exact path='/dTraining' element={<DTraining />} />
-        <Route  exact path='/notifikasi' element={<Notifikasi />} />
-        <Route  exact path='/konsultasi' element={<Konsultasi />} />
-        <Route  exact path='/detailKonsultasi' element={<DetailKonsultasi />} />
+        <Route  path='/' element={<Navigate to="/home" replace/>} />
+        <Route  path='/home' element={<Home />} />
+        <Route  path='/AddTraining' element={<AddTraining />} />
+        <Route  path='/List-Training' element={<ListTraining />} />
+        <Route  path='/List-perusahaan' element={<ListPerusahaan />} />
+        <Route  path='/Detail-Training' element={<Dtraining />} />
+        <Route  path='/DetailTraining' element={<DetailTraining />} />
+        <Route  path='/dTraining' element={<DTraining />} />
+        <Route  path='/notifikasi' element={<Notifikasi />} />
+        <Route  path='/konsultasi' element={<Konsultasi />} />
+        <Route  path='/detailKonsultasi' element={<DetailKonsultasi />} />
         </Routes>
       </>
       </Router>
